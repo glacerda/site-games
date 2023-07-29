@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerGames</title>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <!-- Conteúdo do logo aqui -->
+      <span class="logo-text">PowerGames</span>
+      <img src="Imagens/LogoTop.png" alt="Logo" class="logo-image">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Procurando algo específico?">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+    <div class="user-login">
+      <button>Login</button>
+    </div>
+    <div class="user-buttons">
+      <button><i class="fas fa-heart"></i></button>
+      <button><i class="fas fa-shopping-cart"></i></button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Sessão que Link os Itens -->
+    <section id="links" class="container-fluid">
+      <div class="link-itens">
+        <a href="#">Console</a>
+        <a href="#">PC</a>
+        <a href="#">Notebook</a>
+        <a href="#">SmartPhone</a>
+        <a href="#">Periféricos</a>
+      </div>
+    </section>
+
+
+    <!-- Sessão do Carrossel Primario GRID-->
+    <section class="grid">
+      <div class="swiper grid-swiper-container">
+        <div class="swiper-wrapper grid-swiper-wrapper">
+          <div class="swiper-slide grid-slide">
+            <div class="grid-galeria">
+              <figure class="itemGaleria item01">
+                <img src="Imagens/iphone-1_1920.png" alt="imagem 0" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item02">
+                <img src="Imagens/iphone-2_1920.png" alt="imagem 1" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item03">
+                <img src="Imagens/iphone-3_1920.png" alt="imagem 2" class="imgGaleria">
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-slide grid-slide">
+            <div class="grid-galeria">
+              <!-- Seus itens da galeria para o segundo slide -->
+              <figure class="itemGaleria item01">
+                <img src="Imagens/iphone-3_1920.png" alt="imagem 0" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item02">
+                <img src="Imagens/iphone-1_1920.png" alt="imagem 1" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item03">
+                <img src="Imagens/iphone-2_1920.png" alt="imagem 2" class="imgGaleria">
+              </figure>
+            </div>
+          </div>
+          <div class="swiper-slide grid-slide">
+            <div class="grid-galeria">
+              <!-- Seus itens da galeria para o terceiro slide -->
+              <figure class="itemGaleria item01">
+                <img src="Imagens/iphone-2_1920.png" alt="imagem 0" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item02">
+                <img src="Imagens/iphone-3_1920.png" alt="imagem 1" class="imgGaleria">
+              </figure>
+              <figure class="itemGaleria item03">
+                <img src="Imagens/iphone-1_1920.png" alt="imagem 2" class="imgGaleria">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev bt-grid-prev"></div>
+        <div class="swiper-button-next bt-grid-next"></div>
+      </div>
+    </section>
+
+
+    <!-- Sessão do Carrossel Secundario -->
+    <section class="carrossel-produtos">
+      <h2>Mais Vendidos</h2>
+      <div class="swiper-container line-swiper-container">
+        <div class="swiper-wrapper line-swiper-wrapper">
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/Iphone1.png" alt="Produto 1">
+              <h3>Celular Apple iPhone 11 128GB A2111 LL / 4G LTE / Tela 6.1" / Câmeras de 12MP + 12MP e 12MP - Black
+                (CPO)</h3>
+              <p> <span class="cor-do-pix">R$ 2.454,64</span>
+                no PIX</p>
+              <p>10X de R$ 120,00 no Cartão</p>
+            </div>
+          </div>
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/PlacaVideo1.jpg" alt="Produto 2">
+              <h3>Placa gráfica Nvidia Geforce RTX 2080 Super Founders Edition 8GB RAM</h3>
+              <p> <span class="cor-do-pix">R$ 4.899,00</span>
+                no PIX</p>
+              <p>10X de R$ 120,00 no Cartão</p>
+            </div>
+          </div>
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/nintendo-switch.jpg" alt="Produto 3">
+              <h3>Console Nintendo Switch Neon Blue e Neon Red com Joy‑Con + Super Mario Kart 8 Deluxe - Nintendo</h3>
+              <p> <span class="cor-do-pix">R$ 2.841,89</span>
+                no PIX</p>
+              <p>10X de R$ 120,00 no Cartão</p>
+            </div>
+          </div>
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/Notebook-Mac.jpg" alt="Produto 4">
+              <h3>Apple notebook MacBook Air (de 13 polegadas, Processador M1 da Apple com CPU 8‑core e GPU 7‑core, 8 GB
+                RAM, 256 GB) - Prateado</h3>
+              <p> <span class="cor-do-pix">R$ 7.299,00</span>
+                no PIX</p>
+              <p>10X de R$ 120,00 no Cartão</p>
+            </div>
+          </div>
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/Nes-nintendinho.jpg" alt="Produto 5">
+              <h3>Console Nintendinho Nes 8 bits Playtronic + Caixa Jogo Etc --Colecionador ---</h3>
+              <p> <span class="cor-do-pix">R$ 800,00</span>
+                no PIX</p>
+              <p>10X de R$ 90,00 no Cartão</p>
+            </div>
+          </div>
+          <div class="swiper-slide line-slide">
+            <div class="card">
+              <img src="Imagens/PC-Mac-Pro.jpg" alt="Produto 6">
+              <h3>Mac Studio Apple, CPU de 12 Núcleos, GPU de 30 Núcleos - Prateado</h3>
+              <p> <span class="cor-do-pix">R$ 9.999,00</span>
+                no PIX</p>
+              <p>10X de R$ 1099,90 no Cartão</p>
+            </div>
+          </div>
+          <!-- Adicione os outros cards aqui -->
+        </div>
+        <div class="swiper-button-next bt-line-next"></div>
+        <div class="swiper-button-prev bt-line-prev"></div>
+
+        <div class="swiper-pagination line-swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- Sessão da Imagem Larga -->
+    <section class="imagem-larga">
+      <div class="imagem-de-fundo" style="background-image: url(Imagens/Xboox-Longo.jpg);"></div>
+      <!-- <img src="Imagens/X-Box.jpg" alt="Imagem Larga"> -->
+    </section>
+
+
+    <!-- Sessão de Cards -->
+    <h2>Mais Populares</h2>
+    <section class="sessao-cards">
+      <div class="card-prods">
+        <img src="Imagens/Super-Nintendo.jpg" alt="Produto 1">
+        <div class="card-text">
+          <h3>Super Nintendo Classic</h3>
+          <p> <span class="cor-do-pix">R$ 499,00</span> no PIX</p>
+          <p>10X de R$ 59,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/xbox1.jpg" alt="Produto 2">
+        <div class="card-text">
+          <h3>Xbox 360 250GB Branco</h3>
+          <p> <span class="cor-do-pix">R$ 949,00</span> no PIX</p>
+          <p>10X de R$ 104,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/PSone.jpg" alt="Produto 3">
+        <div class="card-text">
+          <h3>Playstation 1 Fat</h3>
+          <p> <span class="cor-do-pix">R$ 420,00</span> no PIX</p>
+          <p>10X de R$ 52,00 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Nintendo-64-Preto.jpg" alt="Produto 4">
+        <div class="card-text">
+          <h3>Nintendo 64 Preto - N64</h3>
+          <p> <span class="cor-do-pix">R$ 549,00</span> no PIX</p>
+          <p>10X de R$ 64,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Sony-PSvita.jpg" alt="Produto 5">
+        <div class="card-text">
+          <h3>Sony PSP</h3>
+          <p> <span class="cor-do-pix">R$ 499,00</span> no PIX</p>
+          <p>10X de R$ 59,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Nintendo-DSi-XL.jpg" alt="Produto 6">
+        <div class="card-text">
+          <h3>Nintendo DSi XL</h3>
+          <p> <span class="cor-do-pix">R$ 1.199,00</span> no PIX</p>
+          <p>10X de R$ 129,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Game-Boy-Advance.jpg" alt="Produto 7">
+        <div class="card-text">
+          <h3>Game Boy Advance</h3>
+          <p> <span class="cor-do-pix">R$ 650,00</span> no PIX</p>
+          <p>10X de R$ 75,00 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Nintendo-3DS-XL.jpg" alt="Produto 8">
+        <div class="card-text">
+          <h3>Nintendo 3DS XL Standard Azul/Preto</h3>
+          <p> <span class="cor-do-pix">R$ 1.389,00</span> no PIX</p>
+          <p>10X de R$ 138,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Playstation-2.jpg" alt="Produto 9">
+        <div class="card-text">
+          <h3>Sony Playstation 2</h3>
+          <p> <span class="cor-do-pix">R$ 599,00</span> no PIX</p>
+          <p>10X de R$ 69,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Game-Cube.jpg" alt="Produto 10">
+        <div class="card-text">
+          <h3>Nintendo Game Cube</h3>
+          <p> <span class="cor-do-pix">R$ 1.299,00</span> no PIX</p>
+          <p>10X de R$ 139,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Nintendo-Wii.jpg" alt="Produto 11">
+        <div class="card-text">
+          <h3>Nintendo Wii 512MB Standard Branco</h3>
+          <p> <span class="cor-do-pix">R$ 799,00</span> no PIX</p>
+          <p>10X de R$ 89,90 no Cartão</p>
+        </div>
+      </div>
+      <div class="card-prods">
+        <img src="Imagens/Playstation-3.jpg" alt="Produto 12">
+        <div class="card-text">
+          <h3>Playstation 3 320GB</h3>
+          <p> <span class="cor-do-pix">R$ 1.359,00</span> no PIX</p>
+          <p>10X de R$ 145,90 no Cartão</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de Info -->
+    <section class="info-contato">
+      <div class="info-container">
+        <h2>Informação do Contato</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="Imagens/Telefone-icon.png" alt="Telefone">
+            <p>+01 (051) 2345-6789</p>
+          </div>
+          <div class="contact-item">
+            <img src="Imagens/Carta-icon2.png" alt="E-mail">
+            <p>Contato@seucontato.com</p>
+          </div>
+          <div class="contact-item">
+            <img src="Imagens/localização.png" alt="Localização">
+            <p>Rua Alameda dos Anjos, 05, Power Ranger</p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <img src="Imagens/Facebook.png" alt="Facebook">
+          <img src="Imagens/Twitter.png" alt="Twitter">
+          <img src="Imagens/Instagram.png" alt="Instagram">
+          <img src="Imagens/WhattsZap.png" alt="WhatsApp">
+        </div>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Digite seu nome">
+        <input type="email" placeholder="Digite um endereço de e-mail válido">
+        <textarea placeholder="Digite sua mensagem"></textarea>
+        <button>Enviar</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer-container">
+    <div class="logo-footer">
+      <span class="logo-text-footer">PowerGames</span>
+      <img src="Imagens/LogoTop.png" alt="Logo" class="logo-image">
+    </div>
+    <p>Os melhores equipamentos para você!</p>
+
+    <hr class="line-footer" />
+    <div class="content-copyright">
+      <p>Copyright 2023 - Guilherme Lacerda - Todo os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+
+</body>
+
+</html>
