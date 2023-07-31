@@ -1,0 +1,163 @@
+body {
+  margin: 10px 10px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #151d27;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1921px) {
+  body {
+    margin: 0 55vh;
+  }
+}
+
+body h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+.main-login {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login h1 {
+  color: #fff;
+  font-size: 2vw;
+}
+
+.left-login-logo {
+  width: 40%;
+}
+
+.right-login {
+  margin-top: 30px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #151d27;
+  border-radius: 20px;
+  box-shadow: 0px 10px 45px #61f080;
+}
+
+.card-login h1 {
+  color: #fff;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.textfield {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px;
+}
+
+.textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #4E8E0E;
+  /* background: #2d9766; */
+  color: #fff;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield label {
+  color: #fff;
+  padding: 10px;
+}
+
+.textfield input::placeholder {
+  color: #fff;
+}
+
+.btn-login {
+  width: 90%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: #4E8E0E;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px -15px #61f080;
+}
+
+
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 900px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+
+  }
+
+  .left-login h1 {
+    display: none;
+  }
+
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-login {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-login-logo {
+    width: 20%;
+  }
+
+  .card-login {
+    width: 90%;
+  }
+}

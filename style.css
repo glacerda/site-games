@@ -36,6 +36,7 @@ header {
   cursor: pointer;
 }
 
+
 .logo-text {
   display: block;
   font-size: 22px;
@@ -174,6 +175,10 @@ textarea:focus, input:focus, select:focus {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
   .logo {
     flex: 2;
     justify-content: flex-start;
@@ -192,7 +197,6 @@ textarea:focus, input:focus, select:focus {
   .user-login {
     flex: 2;
     justify-content: flex-end;
-    margin-top: 0;
   }
 
   .user-buttons {
@@ -264,6 +268,13 @@ textarea:focus, input:focus, select:focus {
   }
 }
 
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 480px) {
+  .link-itens {
+    font-size: 11px;
+  }
+}
+
 
 
 
@@ -281,7 +292,7 @@ textarea:focus, input:focus, select:focus {
 .grid-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 13vw);
+  grid-template-rows: repeat(2, 12vw);
   gap: 0.5rem;
   border: 1px solid #4E8E0E;
   border-radius: 5px;
@@ -363,6 +374,14 @@ img:hover {
     margin: inherit;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+
+  .bt-grid-prev,
+  .bt-grid-next {
+    display: none;
+  }
 }
 
 
@@ -479,6 +498,7 @@ img:hover {
 
   .card {
     width: 150px;
+    padding: 55px 0px;
   }
 
   .card img {
@@ -487,7 +507,12 @@ img:hover {
   }
 
   .card h3 {
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 14px;
   }
 }
 
@@ -562,20 +587,13 @@ img:hover {
 
 .card-prods {
   flex-basis: calc(100%);
-  /* Defina o tamanho dos cards como 25% da largura da sessão de cards com espaçamento de 20px entre eles */
   max-width: calc(100%);
-  /* Impede que o card fique maior que 25% da largura da sessão */
   height: 350px;
-  /* Defina a altura desejada para os cards */
-  /* border: 1px solid #4E8E0E; */
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* Alinha os elementos verticalmente dentro do card */
   justify-content: center;
-  /* Centraliza os elementos verticalmente dentro do card */
   align-items: center;
-  /* Centraliza os elementos horizontalmente dentro do card */
   font-size: 15px;
   margin-bottom: 35px auto;
 }
@@ -639,7 +657,17 @@ img:hover {
 }
 
 
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 480px) {
+  .sessao-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .card-text {
+    width: 220px;
+    height: 150px;
+  }
+}
 
 
 
@@ -665,6 +693,10 @@ img:hover {
 .info-container {
   flex-basis: 50%;
   padding-right: 20px;
+}
+
+.info-container h2 {
+  margin-top: 5px;
 }
 
 .contact-info {
@@ -731,6 +763,36 @@ img:hover {
 }
 
 
+@media (max-width: 480px) {
+  .info-contato {
+    flex-direction: column;
+    margin: 60px auto;
+  }
+
+  .info-container {
+    padding-right: 0px;
+  }
+
+  .info-container h2 {
+    margin: auto;
+  }
+
+  .contact-info {
+    margin-top: 15px;
+  }
+
+  .contact-form {
+    margin-top: 35px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+
+}
 
 
 
@@ -741,6 +803,7 @@ img:hover {
 
 .footer-container {
   display: block;
+  margin-top: 5%;
   flex-direction: column;
   justify-content: center;
   color: #fff;
@@ -776,7 +839,24 @@ img:hover {
 }
 
 .content-copyright {
-
   font-size: 14px;
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    margin-top: 15%;
+  }
+
+  .logo-text-footer {
+    font-size: 20px;
+  }
+
+  .footer-container p {
+    font-size: 16px;
+  }
+
+  .content-copyright p {
+    font-size: 11px;
+  }
 }
